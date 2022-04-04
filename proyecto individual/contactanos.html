@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script  defer src="./main.js"></script>
+    
+    <title>Proyecto Individual</title>
+</head>
+</head>
+<body>
+    <header class="header__contactanos">
+        <nav class="navegacion">
+            <li><a href="index.html"> <img src="./img/iconos/logo.png"alt="" class="logo"></a></li>
+            <li class="links"><a href="./nosotros.html"><img src="./img/iconos/icono nosotros.png" alt=""> Nosotros</a></li>
+            <li class="links"><a href="#"><img src="./img/iconos/icono noticias.png" alt=""> Noticias</a> </li>
+            <li class="links links--activo"><a href="contactanos.html"><img src="./img/iconos/icono contactanos.png" alt=""> Contactanos</a></li>
+            <li class="links"><a href="#"><img src="./img/iconos/icono programación.png" alt=""> Programacion</a></li>
+        </nav>
+    
+        <div class="interaccion__contactanos">
+            <button class="boton__contactanos boton__cliente" id="boton__cliente">Deseo contratar un artista</button>
+            <button class="boton__contactanos boton__artista" id="boton__artista">Soy artista y me gustaria vincularme</button>
+            <p class="parrafo__contactanos">Porfavor llena el siguiente formulario, atenderemos tu solicitud lo antes posible</p>
+        </div>
+        <div class="formulario">
+        <form class="formulario__general formulario__cliente">
+            <input type="email" id="nombre"" autocomplete="off" class="formulario__imput">
+            <label for="nombre" class="formulario__texto">Nombre: </label>
+            <input type="email" id="telefono" autocomplete="off" class="formulario__imput">
+            <label for="telefono" class="formulario__texto">Telefono: </label>
+            <input type="email" id="correo" autocomplete="off" class="formulario__imput">
+            <label for="correo" class="formulario__texto"> Correo: </label>
+            <textarea name="" id="mensaje" cols="5" rows="10" class="formulario__mensaje"autocomplete="off" ></textarea>
+            <label for="mensaje" class="formulario__texto" id="texto__mensaje"> Mensaje: </label>
+            <button type="submit"class="boton__enviar" id="enviar__cliente">
+                enviar
+            </button>
+            
+        </form> 
+        <form class="formulario__general formulario__artista" action="">
+            <input type="url" name="Nombre Artista" id="nombre__artista" class="formulario__imput" autocomplete="off">
+            <label for="nombre__artista" class="formulario__texto">Nombre:</label>
+            <input type="url" name="Contacto Artista" id="contacto__artista" class="formulario__imput" autocomplete="off">
+            <label for="contacto__artista" class="formulario__texto">Teléfono:</label>
+            <input type="url" name="Correo Artista" id="correo__artista" class="formulario__imput" autocomplete="off">
+            <label for="correo__artista" class="formulario__texto">Correo:</label>
+            <input type="url" name="ciudad Artista" id="ciudad__artista" class="formulario__imput" autocomplete="off">
+            <label for="ciudad__artista" class="formulario__texto">Ciudad:</label>
+            <textarea name="" id="mensaje__artista" cols="5" rows="10" class="formulario__mensaje"autocomplete="off" ></textarea>
+            <label for="mensaje__artista" class="formulario__texto" id="texto__mensaje"> Mensaje: </label>
+            <button type="submit" class="boton__enviar" id="enviar__artista">
+                enviar
+            </button>
+        </form>
+    </div>
+    <div class="formulario__enviado">
+        <p>
+            Datos enviados correctamente, te contactaremos lo antes posible
+        </p>
+        <button id="boton__aceptar">
+            aceptar
+        </button>
+    </div>
+    </header>
+    
+</body>
+</html>
